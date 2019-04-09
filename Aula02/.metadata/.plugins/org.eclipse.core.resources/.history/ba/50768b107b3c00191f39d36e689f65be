@@ -1,0 +1,44 @@
+package br.usjt.web.calculadorajava.teste;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import br.usjt.web.calculadorajava.model.Calculadora;
+
+class CalculadoraTest {
+	
+	Calculadora calculadora;
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+		calculadora = new Calculadora();
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+	}
+
+	@Test
+	void testSomar() {
+		assertEquals(20, calculadora.somar(10, 10), "O método de somoma 10 + 10 deu errado");
+	}
+	
+	@Test
+	void testSubtrair() {
+		assertTrue(12 == calculadora.subtrair(20, 8));
+	}
+
+}

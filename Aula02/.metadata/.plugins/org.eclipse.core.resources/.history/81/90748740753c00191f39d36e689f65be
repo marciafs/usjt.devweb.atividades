@@ -1,0 +1,5 @@
+package br.usjt.web.calculadorajava.model;
+
+public class Calculadora {
+
+}
