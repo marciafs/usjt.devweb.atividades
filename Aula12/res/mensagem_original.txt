@@ -1,0 +1,4 @@
+usuario1 senha1 perfilA
+usuario2 senha2 perfilB
+usuario3 senha3 perfilA
+usuario4 senha4 perfilB
